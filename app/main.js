@@ -7,7 +7,7 @@ async function startTracking() {
             enableHighAccuracy: true,
             maximumAge: 0
         });
-        document.getElementById("status").innerText = "Rastreamento iniciado...";
+        document.getElementById("status").innerText = "Rastreamento iniciado.";
     } else {
         alert("Geolocalização não é suportada neste navegador.");
     }
