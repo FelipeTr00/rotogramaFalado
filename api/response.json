@@ -1,9 +1,20 @@
 {
     "locations": [
-        { "latitude": -24.017589356293932, "longitude": -52.351243840187465, "message": "mensagem 1" },
-        { "latitude": -24.017194, "longitude": -52.352091, "message": "mensagem 2" },
-        { "latitude": -24.017194, "longitude": -52.352805, "message": "mensagem 3" },
-        { "latitude": -24.017229, "longitude": -52.354183, "message": "mensagem 4" },
-        { "latitude": -24.017275, "longitude": -52.355332, "message": "mensagem 5" }
+        { "latitude": -24.017589356293932, "longitude": -52.351243840187465, "message": "mensagem 1", "operation": "home" },
+        { "latitude": -24.01857781423437, "longitude": -52.35143081192124, "message": "mensagem 2", "operation": "home" },
+        { "latitude": -24.018482884265495, "longitude": -52.35342857402986, "message": "mensagem 3", "operation": "home" },
+        { "latitude": -24.019069891449103, "longitude": -52.35714432967109, "message": "mensagem 4", "operation": "home" },
+        { "latitude": -24.020552314720632, "longitude": -52.359666563399536, "message": "mensagem 5", "operation": "home" },
+        { "latitude": -24.02543055689916, "longitude": -52.36218578941151, "message": "mensagem 6", "operation": "home" },
+        { "latitude": -24.026942981575726, "longitude": -52.36436886342308, "message": "mensagem 7", "operation": "home" },
+
+        { "latitude": -24.105724095214473, "longitude": -52.35998374398056, "message": "mensagem 1", "operation": "getran" },
+        { "latitude": -24.106350859146975, "longitude": -52.36040216857688, "message": "mensagem 2", "operation": "getran" },
+        { "latitude": -24.107036378679357, "longitude": -52.36016881640872, "message": "mensagem 3", "operation": "getran" },
+        { "latitude": -24.106696067661854, "longitude": -52.35943657337395, "message": "mensagem 4", "operation": "getran" },
+        { "latitude": -24.10597871843606, "longitude": -52.35884380518406, "message": "mensagem 5", "operation": "getran" },
+        { "latitude": -24.105070396751106, "longitude": -52.358690919247564, "message": "mensagem 6", "operation": "getran" }
     ]
 }
+
+

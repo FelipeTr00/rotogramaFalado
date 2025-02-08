@@ -9,7 +9,7 @@ async function startTracking() {
         });
         document.getElementById("status").innerText = "Rastreamento iniciado...";
     } else {
-        alert("Geolocalização não é suportada neste navegador.");
+        alert("Geolocalização não é suportada.");
     }
 }
 
@@ -22,16 +22,16 @@ async function verificarLocalizacao(position) {
         const response = await fetch("api/response.json");
         const data = await response.json();
 
-        let dentroDaZona = false; // Verifica se está perto de algum ponto
+        let estaNoPerimetro = false;
 
         if (data && data.locations) {
             for (const location of data.locations) {
                 const distancia = calcularDistancia(lat, lon, location.latitude, location.longitude);
                 
                 if (distancia <= proximidadeMaxima) {
-                    dentroDaZona = true;
+                    estaNoPerimetro = true;
                     if (!falou) {
-                        falarTexto(location.message);
+                        falarDuasVezes(location.message);
                         falou = true;
                     }
                     break;
@@ -40,12 +40,12 @@ async function verificarLocalizacao(position) {
         }
 
         // Se o usuário sair da área de proximidade, permite falar novamente
-        if (!dentroDaZona) {
+        if (!estaNoPerimetro) {
             falou = false;
         }
 
     } catch (error) {
-        console.error("Erro ao buscar dados do JSON: ", error);
+        console.error("Erro na API: ", error);
     }
 }
 
@@ -64,9 +64,18 @@ function erroLocalizacao(error) {
     console.error("Erro ao obter localização: ", error.message);
 }
 
-function falarTexto(mensagem) {
+function falarDuasVezes(mensagem) {
     const synth = window.speechSynthesis;
     const utterance = new SpeechSynthesisUtterance(mensagem);
     utterance.lang = "pt-BR";
+
+    // Primeira leitura
     synth.speak(utterance);
+
+    // Segunda Leitura
+    setTimeout(() => {
+        const utterance2 = new SpeechSynthesisUtterance(mensagem);
+        utterance2.lang = "pt-BR";
+        synth.speak(utterance2);
+    }, 3000); // Time await
 }
