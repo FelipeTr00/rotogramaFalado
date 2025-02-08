@@ -1,0 +1,15 @@
+.bg-primary {
+    background-color: #0d5337 !important;
+}
+
+.btn-primary{
+    background-color: #0d5337 !important;
+}
+
+footer {
+    height: 30px;
+    line-height: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
