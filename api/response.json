@@ -1,9 +1,9 @@
 {
     "locations": [
-        { "latitude": -24.017, "longitude": -52.351, "message": "mensagem 1" },
-        { "latitude": -24.017, "longitude": -52.352, "message": "mensagem 2" },
-        { "latitude": -24.017, "longitude": -52.353, "message": "mensagem 3" },
-        { "latitude": -24.017, "longitude": -52.354, "message": "mensagem 4" },
-        { "latitude": -24.017, "longitude": -52.355, "message": "mensagem 5" }
+        { "latitude": -24.017205, "longitude": -52.351555, "message": "mensagem 1" },
+        { "latitude": -24.017194, "longitude": -52.352091, "message": "mensagem 2" },
+        { "latitude": -24.017194, "longitude": -52.352805, "message": "mensagem 3" },
+        { "latitude": -24.017229, "longitude": -52.354183, "message": "mensagem 4" },
+        { "latitude": -24.017275, "longitude": -52.355332, "message": "mensagem 5" }
     ]
 }
