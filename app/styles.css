@@ -1,3 +1,13 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 600px;
+    margin: auto;
+    background-color: #f5f5dc;
+}
+
+
 .bg-primary {
     background-color: #0d5337 !important;
 }
@@ -6,10 +16,17 @@
     background-color: #0d5337 !important;
 }
 
+.iframe-container {
+    margin-top: 30px;
+}
+
 footer {
-    height: 30px;
-    line-height: 30px;
-    position: fixed;
-    bottom: 0;
+    height: 40px;
+    line-height: 40px;
     width: 100%;
+    background-color: #0d5337;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: auto;
 }

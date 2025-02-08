@@ -1,5 +1,5 @@
-let falou = false;
-const proximidadeMaxima = 50; // Definir a proximidade em metros
+let falou = false; // Mensagem foi lida?
+const proximidadeMaxima = 50; // Proximidade do ponto
 
 async function startTracking() {
     if (navigator.geolocation) {
@@ -22,7 +22,7 @@ async function verificarLocalizacao(position) {
         const response = await fetch("api/response.json");
         const data = await response.json();
 
-        let dentroDaZona = false; // Verifica se está perto de algum ponto salvo
+        let dentroDaZona = false; // Verifica se está perto de algum ponto
 
         if (data && data.locations) {
             for (const location of data.locations) {
@@ -32,9 +32,9 @@ async function verificarLocalizacao(position) {
                     dentroDaZona = true;
                     if (!falou) {
                         falarTexto(location.message);
-                        falou = true; // Evita repetição
+                        falou = true;
                     }
-                    break; // Sai do loop ao encontrar um ponto próximo
+                    break;
                 }
             }
         }
