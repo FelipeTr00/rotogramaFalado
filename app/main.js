@@ -22,17 +22,28 @@ async function verificarLocalizacao(position) {
         const response = await fetch("api/response.json");
         const data = await response.json();
 
+        let dentroDaZona = false; // Verifica se está perto de algum ponto salvo
+
         if (data && data.locations) {
             for (const location of data.locations) {
                 const distancia = calcularDistancia(lat, lon, location.latitude, location.longitude);
                 
-                if (distancia <= proximidadeMaxima && !falou) {
-                    falarTexto(location.message);
-                    falou = true; // Evita repetição
-                    break;
+                if (distancia <= proximidadeMaxima) {
+                    dentroDaZona = true;
+                    if (!falou) {
+                        falarTexto(location.message);
+                        falou = true; // Evita repetição
+                    }
+                    break; // Sai do loop ao encontrar um ponto próximo
                 }
             }
         }
+
+        // Se o usuário sair da área de proximidade, permite falar novamente
+        if (!dentroDaZona) {
+            falou = false;
+        }
+
     } catch (error) {
         console.error("Erro ao buscar dados do JSON: ", error);
     }
