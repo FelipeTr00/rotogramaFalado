@@ -77,5 +77,5 @@ function falarDuasVezes(mensagem) {
         const utterance2 = new SpeechSynthesisUtterance(mensagem);
         utterance2.lang = "pt-BR";
         synth.speak(utterance2);
-    }, 3000); // Time await
+    }, 4000); // Time await
 }
