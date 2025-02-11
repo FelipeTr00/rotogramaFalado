@@ -29,16 +29,9 @@ Rotograma Falado é uma aplicação web que utiliza **geolocalização** para id
 │── 📜 README.md         # Documentação do projeto
 ```
 
-## 🛠️ Como Executar
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/FelipeTr00/rotograma-falado.git
-   ```
-2. **Abra o arquivo `index.html` em um navegador**.
-3. **Permita o acesso à geolocalização** quando solicitado.
-4. **Teste o funcionamento:**
-   - Caminhe ou simule uma posição no DevTools (`F12` > Sensors > Location)
-   - O site falará uma mensagem ao se aproximar de um ponto cadastrado.
+## 📱 Acesse o App
+### Link: [Rotograma-Falado](https://rotograma-falado.vercel.app)
+
 
 ## 🗺️ Simulação da API de Pontos e Mensagens
 Arquivo `api/response.json`:
