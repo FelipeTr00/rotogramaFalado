@@ -13,7 +13,15 @@
         { "latitude": -24.107036378679357, "longitude": -52.36016881640872, "message": "mensagem 3", "operation": "getran" },
         { "latitude": -24.106696067661854, "longitude": -52.35943657337395, "message": "mensagem 4", "operation": "getran" },
         { "latitude": -24.10597871843606, "longitude": -52.35884380518406, "message": "mensagem 5", "operation": "getran" },
-        { "latitude": -24.105070396751106, "longitude": -52.358690919247564, "message": "mensagem 6", "operation": "getran" }
+        { "latitude": -24.105070396751106, "longitude": -52.358690919247564, "message": "mensagem 6", "operation": "getran" },
+        
+        { "latitude": -24.103694781506714, "longitude": -52.35957834336906, "message": "Bem vindo a getran", "operation": "sapore" },
+        { "latitude": -24.09919468206118, "longitude": -52.356002823043404, "message": "Arcanzinha", "operation": "sapore" },
+        { "latitude": -24.096517515115405, "longitude": -52.35442529993669, "message": "Fazenda experimental", "operation": "sapore" },
+        { "latitude": -24.09448168277284, "longitude": -52.35331457598728, "message": "Bem vindo a fiação", "operation": "sapore" }
+       
+
+        
     ]
 }
 
